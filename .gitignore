@@ -1,0 +1,5 @@
+web/certs/*.key
+web/certs/*.crt
+backups/*.sql
+backups/*.zip
+backups/*.gz
