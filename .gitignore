@@ -1,5 +1,9 @@
 web/certs/*.key
 web/certs/*.crt
+web/dist/
+web/node_modules/
+backend/node_modules/
+backend/.env
 backups/*.sql
 backups/*.zip
 backups/*.gz

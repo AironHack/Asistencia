@@ -1,0 +1,2 @@
+ALTER TABLE tokens_qr
+  MODIFY token_jti VARCHAR(64) NOT NULL;

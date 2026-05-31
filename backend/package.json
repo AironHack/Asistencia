@@ -1,0 +1,28 @@
+{
+  "name": "asistencia-backend",
+  "version": "1.0.0",
+  "description": "API del sistema de control de asistencia",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "check": "node --check src/server.js",
+    "migrate": "node src/scripts/run-migrations.js",
+    "verify": "node src/scripts/verify-system.js",
+    "verify:flow": "node src/scripts/verify-final-flow.js",
+    "backup": "node src/scripts/backup-database.js",
+    "check:prod": "node src/scripts/check-production.js",
+    "secrets": "node src/scripts/generate-secrets.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.22.3"
+  }
+}

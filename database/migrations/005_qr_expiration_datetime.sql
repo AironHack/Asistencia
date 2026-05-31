@@ -1,0 +1,2 @@
+ALTER TABLE tokens_qr
+  MODIFY expira_en DATETIME NOT NULL;

@@ -1,0 +1,26 @@
+{
+  "name": "asistencia-web",
+  "version": "1.0.0",
+  "description": "Sistema web de control de asistencia",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5180 --strictPort",
+    "dev:https": "vite --mode https-local --host 0.0.0.0 --port 5180 --strictPort",
+    "cert:https": "powershell -ExecutionPolicy Bypass -File scripts/generate-https-cert.ps1",
+    "start": "vite --host 0.0.0.0 --port 5180 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.17.8",
+    "@mantine/hooks": "^7.17.8",
+    "@mantine/notifications": "^7.17.8",
+    "@tabler/icons-react": "^3.35.0",
+    "@vitejs/plugin-react": "^5.1.1",
+    "html5-qrcode": "^2.3.8",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^6.0.7"
+  }
+}
